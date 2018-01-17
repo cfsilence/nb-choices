@@ -1,6 +1,6 @@
 {
-  "name": "nb-choices",
-  "version": "1.0.1-beta",
+  "name": "nb-choices-2",
+  "version": "1.0.1-beta2",
   "description": "Angular wrapper for choices.js, vanilla, lightweight, configurable select box/text input plugin",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
@@ -13,14 +13,14 @@
     "angular custom dropdown"
   ],
   "author": {
-    "name": "Netanel Basal",
-    "url": "https://github.com/NetanelBasal"
+    "name": "Todd Sharp",
+    "url": "https://github.com/cfsilence"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NetanelBasal/nb-choices"
+    "url": "https://github.com/cfsilence/nb-choices"
   },
-  "homepage": "https://github.com/NetanelBasal/nb-choices#readme",
+  "homepage": "https://github.com/cfsilence/nb-choices#readme",
   "scripts": {
     "build": "npm run build:esm && npm run build:umd",
     "build:esm": "gulp inline-templates && npm run ngcompile",

@@ -27,7 +27,7 @@ import {choicesDefaults, textDefaults} from "../nb-choices-defaults";
 export const CHOICES_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => ChoicesComponent),
-  multi: true,
+  isMultiple: true,
 };
 
 @Component({
@@ -533,7 +533,7 @@ export class ChoicesComponent implements OnInit, OnDestroy, ControlValueAccessor
     component.instance.tpl = that.choiceTemplate;
     component.instance.withCheckbox = that.withCheckbox;
     component.instance.config = this._config;
-    (component.instance as CustomChoiceSelectedComponent).isMulti = isMulti;
+    (component.instance as CustomChoiceSelectedComponent).isMultiple = isMulti;
     component.changeDetectorRef.detectChanges();
     const HTML = component.location.nativeElement.innerHTML;
     this._elementsMap.set(seralizeData, HTML);
